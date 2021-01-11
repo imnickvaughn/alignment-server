@@ -24,10 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'm!j_ie(!jt*ep&q(y1$!4t%7m-2j6wnp+4_zs#vwhls&1lk_-e'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
-
-SESSION_COOKIE_SECURE = True
-CSRF_COOKIE_SECURE = True
+DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
 
@@ -128,6 +125,3 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 CORS_ALLOW_ALL_ORIGINS = True
-
-
-SECURE_SSL_REDIRECT = True
